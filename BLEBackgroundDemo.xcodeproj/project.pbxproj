@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D591B99D2087AFC200B468C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B99C2087AFC200B468C1 /* AppDelegate.swift */; };
+		D591B99F2087AFC200B468C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B99E2087AFC200B468C1 /* ViewController.swift */; };
+		D591B9A22087AFC200B468C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D591B9A02087AFC200B468C1 /* Main.storyboard */; };
+		D591B9A42087AFC400B468C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D591B9A32087AFC400B468C1 /* Assets.xcassets */; };
+		D591B9A72087AFC400B468C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D591B9A52087AFC400B468C1 /* LaunchScreen.storyboard */; };
+		D591B9B22087AFC500B468C1 /* BLEBackgroundDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B9B12087AFC500B468C1 /* BLEBackgroundDemoTests.swift */; };
+		D591B9BD2087AFC500B468C1 /* BLEBackgroundDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B9BC2087AFC500B468C1 /* BLEBackgroundDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D591B9AE2087AFC500B468C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D591B9912087AFC200B468C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D591B9982087AFC200B468C1;
+			remoteInfo = BLEBackgroundDemo;
+		};
+		D591B9B92087AFC500B468C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D591B9912087AFC200B468C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D591B9982087AFC200B468C1;
+			remoteInfo = BLEBackgroundDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D591B9992087AFC200B468C1 /* BLEBackgroundDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEBackgroundDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D591B99C2087AFC200B468C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D591B99E2087AFC200B468C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D591B9A12087AFC200B468C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D591B9A32087AFC400B468C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D591B9A62087AFC400B468C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D591B9A82087AFC400B468C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D591B9AD2087AFC500B468C1 /* BLEBackgroundDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEBackgroundDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D591B9B12087AFC500B468C1 /* BLEBackgroundDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEBackgroundDemoTests.swift; sourceTree = "<group>"; };
+		D591B9B32087AFC500B468C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D591B9B82087AFC500B468C1 /* BLEBackgroundDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEBackgroundDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D591B9BC2087AFC500B468C1 /* BLEBackgroundDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEBackgroundDemoUITests.swift; sourceTree = "<group>"; };
+		D591B9BE2087AFC500B468C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D591B9962087AFC200B468C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591B9AA2087AFC500B468C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591B9B52087AFC500B468C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D591B9902087AFC200B468C1 = {
+			isa = PBXGroup;
+			children = (
+				D591B99B2087AFC200B468C1 /* BLEBackgroundDemo */,
+				D591B9B02087AFC500B468C1 /* BLEBackgroundDemoTests */,
+				D591B9BB2087AFC500B468C1 /* BLEBackgroundDemoUITests */,
+				D591B99A2087AFC200B468C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D591B99A2087AFC200B468C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D591B9992087AFC200B468C1 /* BLEBackgroundDemo.app */,
+				D591B9AD2087AFC500B468C1 /* BLEBackgroundDemoTests.xctest */,
+				D591B9B82087AFC500B468C1 /* BLEBackgroundDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D591B99B2087AFC200B468C1 /* BLEBackgroundDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D591B99C2087AFC200B468C1 /* AppDelegate.swift */,
+				D591B99E2087AFC200B468C1 /* ViewController.swift */,
+				D591B9A02087AFC200B468C1 /* Main.storyboard */,
+				D591B9A32087AFC400B468C1 /* Assets.xcassets */,
+				D591B9A52087AFC400B468C1 /* LaunchScreen.storyboard */,
+				D591B9A82087AFC400B468C1 /* Info.plist */,
+			);
+			path = BLEBackgroundDemo;
+			sourceTree = "<group>";
+		};
+		D591B9B02087AFC500B468C1 /* BLEBackgroundDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D591B9B12087AFC500B468C1 /* BLEBackgroundDemoTests.swift */,
+				D591B9B32087AFC500B468C1 /* Info.plist */,
+			);
+			path = BLEBackgroundDemoTests;
+			sourceTree = "<group>";
+		};
+		D591B9BB2087AFC500B468C1 /* BLEBackgroundDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D591B9BC2087AFC500B468C1 /* BLEBackgroundDemoUITests.swift */,
+				D591B9BE2087AFC500B468C1 /* Info.plist */,
+			);
+			path = BLEBackgroundDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D591B9982087AFC200B468C1 /* BLEBackgroundDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D591B9C12087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemo" */;
+			buildPhases = (
+				D591B9952087AFC200B468C1 /* Sources */,
+				D591B9962087AFC200B468C1 /* Frameworks */,
+				D591B9972087AFC200B468C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEBackgroundDemo;
+			productName = BLEBackgroundDemo;
+			productReference = D591B9992087AFC200B468C1 /* BLEBackgroundDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D591B9AC2087AFC500B468C1 /* BLEBackgroundDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D591B9C42087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemoTests" */;
+			buildPhases = (
+				D591B9A92087AFC500B468C1 /* Sources */,
+				D591B9AA2087AFC500B468C1 /* Frameworks */,
+				D591B9AB2087AFC500B468C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D591B9AF2087AFC500B468C1 /* PBXTargetDependency */,
+			);
+			name = BLEBackgroundDemoTests;
+			productName = BLEBackgroundDemoTests;
+			productReference = D591B9AD2087AFC500B468C1 /* BLEBackgroundDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D591B9B72087AFC500B468C1 /* BLEBackgroundDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D591B9C72087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemoUITests" */;
+			buildPhases = (
+				D591B9B42087AFC500B468C1 /* Sources */,
+				D591B9B52087AFC500B468C1 /* Frameworks */,
+				D591B9B62087AFC500B468C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D591B9BA2087AFC500B468C1 /* PBXTargetDependency */,
+			);
+			name = BLEBackgroundDemoUITests;
+			productName = BLEBackgroundDemoUITests;
+			productReference = D591B9B82087AFC500B468C1 /* BLEBackgroundDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D591B9912087AFC200B468C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = GlobalEdge;
+				TargetAttributes = {
+					D591B9982087AFC200B468C1 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					D591B9AC2087AFC500B468C1 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D591B9982087AFC200B468C1;
+					};
+					D591B9B72087AFC500B468C1 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D591B9982087AFC200B468C1;
+					};
+				};
+			};
+			buildConfigurationList = D591B9942087AFC200B468C1 /* Build configuration list for PBXProject "BLEBackgroundDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D591B9902087AFC200B468C1;
+			productRefGroup = D591B99A2087AFC200B468C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D591B9982087AFC200B468C1 /* BLEBackgroundDemo */,
+				D591B9AC2087AFC500B468C1 /* BLEBackgroundDemoTests */,
+				D591B9B72087AFC500B468C1 /* BLEBackgroundDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D591B9972087AFC200B468C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591B9A72087AFC400B468C1 /* LaunchScreen.storyboard in Resources */,
+				D591B9A42087AFC400B468C1 /* Assets.xcassets in Resources */,
+				D591B9A22087AFC200B468C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591B9AB2087AFC500B468C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591B9B62087AFC500B468C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D591B9952087AFC200B468C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591B99F2087AFC200B468C1 /* ViewController.swift in Sources */,
+				D591B99D2087AFC200B468C1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591B9A92087AFC500B468C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591B9B22087AFC500B468C1 /* BLEBackgroundDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D591B9B42087AFC500B468C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D591B9BD2087AFC500B468C1 /* BLEBackgroundDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D591B9AF2087AFC500B468C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D591B9982087AFC200B468C1 /* BLEBackgroundDemo */;
+			targetProxy = D591B9AE2087AFC500B468C1 /* PBXContainerItemProxy */;
+		};
+		D591B9BA2087AFC500B468C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D591B9982087AFC200B468C1 /* BLEBackgroundDemo */;
+			targetProxy = D591B9B92087AFC500B468C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D591B9A02087AFC200B468C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D591B9A12087AFC200B468C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D591B9A52087AFC400B468C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D591B9A62087AFC400B468C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D591B9BF2087AFC500B468C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D591B9C02087AFC500B468C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D591B9C22087AFC500B468C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BLEBackgroundDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D591B9C32087AFC500B468C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BLEBackgroundDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D591B9C52087AFC500B468C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BLEBackgroundDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEBackgroundDemo.app/BLEBackgroundDemo";
+			};
+			name = Debug;
+		};
+		D591B9C62087AFC500B468C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BLEBackgroundDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEBackgroundDemo.app/BLEBackgroundDemo";
+			};
+			name = Release;
+		};
+		D591B9C82087AFC500B468C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BLEBackgroundDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BLEBackgroundDemo;
+			};
+			name = Debug;
+		};
+		D591B9C92087AFC500B468C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BLEBackgroundDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BLEBackgroundDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D591B9942087AFC200B468C1 /* Build configuration list for PBXProject "BLEBackgroundDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D591B9BF2087AFC500B468C1 /* Debug */,
+				D591B9C02087AFC500B468C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D591B9C12087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D591B9C22087AFC500B468C1 /* Debug */,
+				D591B9C32087AFC500B468C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D591B9C42087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D591B9C52087AFC500B468C1 /* Debug */,
+				D591B9C62087AFC500B468C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D591B9C72087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D591B9C82087AFC500B468C1 /* Debug */,
+				D591B9C92087AFC500B468C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D591B9912087AFC200B468C1 /* Project object */;
+}
