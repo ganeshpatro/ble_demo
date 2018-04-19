@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var btnConnect: UIButton!
     
-    let deviceManager = DeviceManager()
+    let deviceManager = DeviceManager.shared
     var blueToothEnabled = false
     var cPeripheral: CBPeripheral?
     
@@ -64,7 +64,9 @@ class ViewController: UIViewController {
 //            return
 //        }
         
-        deviceManager.startScan(nil)
+        //deviceManager.startScan([CBUUID(string: "180A")])
+        deviceManager.startScan([CBUUID(string: "180A")])
+        
         acticityIndicator.isHidden = false
     }
 
@@ -116,7 +118,7 @@ extension ViewController: DeviceManagerDelegate {
                         and rssi: NSNumber) {
             
             guard let peripheralName = peripheral.name else { return }
-            debugPrint("Found: \(peripheralName)")
+            debugPrint("Found: \(peripheralName) -- \(advertisement) \n\n ")
             let name = textFieldDeviceName.text
             
             if peripheralName.contains(name!) {
@@ -129,6 +131,11 @@ extension ViewController: DeviceManagerDelegate {
                 labelUUID.text = peripheral.identifier.uuidString
                 labelConnectionStatus.text = "Not Connected"
                 //btnConnect.isEnabled = true
+                
+                if let alreadyExistingPeripheral = cPeripheral {
+                    deviceManager.connect(alreadyExistingPeripheral)
+                }
+                
             }
     
         }
@@ -140,6 +147,8 @@ extension ViewController: DeviceManagerDelegate {
           //  btnConnect.isEnabled = false
             
             AppDelegate.sharedApplication().showLocalNotification(withMessage: "\(String(describing: peripheral.name)) connected!!!")
+            
+            AppDelegate.sharedApplication().endBackgroundTask()
 
         }
         
@@ -152,6 +161,8 @@ extension ViewController: DeviceManagerDelegate {
                           with error: Error?) {
             
             AppDelegate.sharedApplication().showLocalNotification(withMessage: "\(String(describing: peripheral.name)) disconnected!!!")
+            print("\(String(describing: peripheral.name)) disconnected!!!")
+            
             labelConnectionStatus.text = "Not Connected"
            // btnConnect.isEnabled = true
             

@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
     
     func startConnectTimer() {
         registerBackgroundTask()
-        timer = Timer.scheduledTimer(withTimeInterval: 7, repeats: false, block: { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: 7, repeats: true, block: { (timer) in
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "start_scaniing"), object: nil)
         })
     }
@@ -42,6 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         print("Background task ended.")
         UIApplication.shared.endBackgroundTask(backgroundTask)
         backgroundTask = UIBackgroundTaskInvalid
+        timer?.invalidate()
+        timer = nil
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -125,7 +127,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
 //            content.attachments = [attachment!]
 //        }
         
-        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 5.0, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 1, repeats: false)
         
         let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request) { (error:Error?) in
