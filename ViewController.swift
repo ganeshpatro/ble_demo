@@ -1,9 +1,10 @@
+
 //
 //  ViewController.swift
-//  BleExampleDemo
+//  BLEBackgroundDemo
 //
-//  Created by KaHa Admin on 18/04/18.
-//  Copyright © 2018 KaHa Admin. All rights reserved.
+//  Created by Ganesh Patro on 4/18/18.
+//  Copyright © 2018 GlobalEdge. All rights reserved.
 //
 
 import UIKit

@@ -79,8 +79,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "startScan(_:)"
-            landmarkType = "7">
+            landmarkName = "DeviceManager"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -95,7 +95,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
-            landmarkName = "connect(_:with:)"
+            landmarkName = "disconnect(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
