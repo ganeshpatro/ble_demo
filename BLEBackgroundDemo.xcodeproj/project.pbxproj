@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E201F3C0EB5A51D7EB68D7A /* Pods_BLEBackgroundDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551003B08FD15F9CAC25C56D /* Pods_BLEBackgroundDemoUITests.framework */; };
+		76732A1B646ECD39D7002B5E /* Pods_BLEBackgroundDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15349E02B01B369F286F4DFD /* Pods_BLEBackgroundDemo.framework */; };
+		D51EB6832087B43E00689DDB /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51EB6812087B43E00689DDB /* UserNotificationsUI.framework */; };
+		D51EB6842087B43E00689DDB /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51EB6822087B43E00689DDB /* UserNotifications.framework */; };
+		D51EB6862087B50B00689DDB /* PushNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EB6852087B50B00689DDB /* PushNotificationHandler.swift */; };
+		D51EB6882087B5C500689DDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D51EB6872087B5C500689DDB /* GoogleService-Info.plist */; };
+		D51EB68D2087C07400689DDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EB68C2087C07300689DDB /* ViewController.swift */; };
+		D51EB6902087C09D00689DDB /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EB68F2087C09D00689DDB /* DeviceManager.swift */; };
 		D591B99D2087AFC200B468C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B99C2087AFC200B468C1 /* AppDelegate.swift */; };
-		D591B99F2087AFC200B468C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B99E2087AFC200B468C1 /* ViewController.swift */; };
 		D591B9A22087AFC200B468C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D591B9A02087AFC200B468C1 /* Main.storyboard */; };
 		D591B9A42087AFC400B468C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D591B9A32087AFC400B468C1 /* Assets.xcassets */; };
 		D591B9A72087AFC400B468C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D591B9A52087AFC400B468C1 /* LaunchScreen.storyboard */; };
 		D591B9B22087AFC500B468C1 /* BLEBackgroundDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B9B12087AFC500B468C1 /* BLEBackgroundDemoTests.swift */; };
 		D591B9BD2087AFC500B468C1 /* BLEBackgroundDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B9BC2087AFC500B468C1 /* BLEBackgroundDemoUITests.swift */; };
+		EF8ABE4197DEC1C762420E34 /* Pods_BLEBackgroundDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D0C232782751AC01A9C487 /* Pods_BLEBackgroundDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10D398E0D712FDC43C7A688B /* Pods-BLEBackgroundDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEBackgroundDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEBackgroundDemo/Pods-BLEBackgroundDemo.release.xcconfig"; sourceTree = "<group>"; };
+		15349E02B01B369F286F4DFD /* Pods_BLEBackgroundDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLEBackgroundDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D0C232782751AC01A9C487 /* Pods_BLEBackgroundDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLEBackgroundDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F3B9B63F3134096BB4ED4F /* Pods-BLEBackgroundDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEBackgroundDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEBackgroundDemoTests/Pods-BLEBackgroundDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		551003B08FD15F9CAC25C56D /* Pods_BLEBackgroundDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLEBackgroundDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABC620A7FCBBE151A5F1E52 /* Pods-BLEBackgroundDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEBackgroundDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLEBackgroundDemo/Pods-BLEBackgroundDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D51EB6812087B43E00689DDB /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D51EB6822087B43E00689DDB /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D51EB6852087B50B00689DDB /* PushNotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationHandler.swift; sourceTree = "<group>"; };
+		D51EB6872087B5C500689DDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D51EB68B2087BC7A00689DDB /* BLEBackgroundDemo.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = BLEBackgroundDemo.entitlements; sourceTree = "<group>"; };
+		D51EB68C2087C07300689DDB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
+		D51EB68F2087C09D00689DDB /* DeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
 		D591B9992087AFC200B468C1 /* BLEBackgroundDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEBackgroundDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D591B99C2087AFC200B468C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D591B99E2087AFC200B468C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D591B9A12087AFC200B468C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D591B9A32087AFC400B468C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D591B9A62087AFC400B468C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +67,9 @@
 		D591B9B82087AFC500B468C1 /* BLEBackgroundDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEBackgroundDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D591B9BC2087AFC500B468C1 /* BLEBackgroundDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEBackgroundDemoUITests.swift; sourceTree = "<group>"; };
 		D591B9BE2087AFC500B468C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8989C431952A4B6D5E1FF21 /* Pods-BLEBackgroundDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEBackgroundDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEBackgroundDemoUITests/Pods-BLEBackgroundDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DFEE9E96FBDC3E3DE0B4761D /* Pods-BLEBackgroundDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEBackgroundDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLEBackgroundDemoUITests/Pods-BLEBackgroundDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB67A357774ACF924869DF07 /* Pods-BLEBackgroundDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEBackgroundDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLEBackgroundDemoTests/Pods-BLEBackgroundDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51EB6832087B43E00689DDB /* UserNotificationsUI.framework in Frameworks */,
+				D51EB6842087B43E00689DDB /* UserNotifications.framework in Frameworks */,
+				76732A1B646ECD39D7002B5E /* Pods_BLEBackgroundDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8ABE4197DEC1C762420E34 /* Pods_BLEBackgroundDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +95,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E201F3C0EB5A51D7EB68D7A /* Pods_BLEBackgroundDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06CB66248AC4688372E83813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D51EB6822087B43E00689DDB /* UserNotifications.framework */,
+				D51EB6812087B43E00689DDB /* UserNotificationsUI.framework */,
+				15349E02B01B369F286F4DFD /* Pods_BLEBackgroundDemo.framework */,
+				45D0C232782751AC01A9C487 /* Pods_BLEBackgroundDemoTests.framework */,
+				551003B08FD15F9CAC25C56D /* Pods_BLEBackgroundDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22ECE034989C561103D294F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5ABC620A7FCBBE151A5F1E52 /* Pods-BLEBackgroundDemo.debug.xcconfig */,
+				10D398E0D712FDC43C7A688B /* Pods-BLEBackgroundDemo.release.xcconfig */,
+				EB67A357774ACF924869DF07 /* Pods-BLEBackgroundDemoTests.debug.xcconfig */,
+				47F3B9B63F3134096BB4ED4F /* Pods-BLEBackgroundDemoTests.release.xcconfig */,
+				DFEE9E96FBDC3E3DE0B4761D /* Pods-BLEBackgroundDemoUITests.debug.xcconfig */,
+				D8989C431952A4B6D5E1FF21 /* Pods-BLEBackgroundDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D51EB68E2087C09D00689DDB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D51EB68F2087C09D00689DDB /* DeviceManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		D591B9902087AFC200B468C1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +142,8 @@
 				D591B9B02087AFC500B468C1 /* BLEBackgroundDemoTests */,
 				D591B9BB2087AFC500B468C1 /* BLEBackgroundDemoUITests */,
 				D591B99A2087AFC200B468C1 /* Products */,
+				22ECE034989C561103D294F2 /* Pods */,
+				06CB66248AC4688372E83813 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +160,16 @@
 		D591B99B2087AFC200B468C1 /* BLEBackgroundDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D51EB68E2087C09D00689DDB /* Manager */,
+				D51EB68C2087C07300689DDB /* ViewController.swift */,
+				D51EB68B2087BC7A00689DDB /* BLEBackgroundDemo.entitlements */,
+				D51EB6872087B5C500689DDB /* GoogleService-Info.plist */,
 				D591B99C2087AFC200B468C1 /* AppDelegate.swift */,
-				D591B99E2087AFC200B468C1 /* ViewController.swift */,
 				D591B9A02087AFC200B468C1 /* Main.storyboard */,
 				D591B9A32087AFC400B468C1 /* Assets.xcassets */,
 				D591B9A52087AFC400B468C1 /* LaunchScreen.storyboard */,
 				D591B9A82087AFC400B468C1 /* Info.plist */,
+				D51EB6852087B50B00689DDB /* PushNotificationHandler.swift */,
 			);
 			path = BLEBackgroundDemo;
 			sourceTree = "<group>";
@@ -132,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D591B9C12087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemo" */;
 			buildPhases = (
+				711EF1D35C4BF00B8E75EDBE /* [CP] Check Pods Manifest.lock */,
 				D591B9952087AFC200B468C1 /* Sources */,
 				D591B9962087AFC200B468C1 /* Frameworks */,
 				D591B9972087AFC200B468C1 /* Resources */,
+				A9D427655A69628FBB3917B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D591B9C42087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemoTests" */;
 			buildPhases = (
+				E8B33687CECE4B85FA121717 /* [CP] Check Pods Manifest.lock */,
 				D591B9A92087AFC500B468C1 /* Sources */,
 				D591B9AA2087AFC500B468C1 /* Frameworks */,
 				D591B9AB2087AFC500B468C1 /* Resources */,
@@ -167,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D591B9C72087AFC500B468C1 /* Build configuration list for PBXNativeTarget "BLEBackgroundDemoUITests" */;
 			buildPhases = (
+				F2969A73326B3B2D4D8CFE77 /* [CP] Check Pods Manifest.lock */,
 				D591B9B42087AFC500B468C1 /* Sources */,
 				D591B9B52087AFC500B468C1 /* Frameworks */,
 				D591B9B62087AFC500B468C1 /* Resources */,
@@ -193,6 +264,17 @@
 				TargetAttributes = {
 					D591B9982087AFC200B468C1 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					D591B9AC2087AFC500B468C1 = {
 						CreatedOnToolsVersion = 9.3;
@@ -230,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D591B9A72087AFC400B468C1 /* LaunchScreen.storyboard in Resources */,
+				D51EB6882087B5C500689DDB /* GoogleService-Info.plist in Resources */,
 				D591B9A42087AFC400B468C1 /* Assets.xcassets in Resources */,
 				D591B9A22087AFC200B468C1 /* Main.storyboard in Resources */,
 			);
@@ -251,12 +334,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		711EF1D35C4BF00B8E75EDBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BLEBackgroundDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D427655A69628FBB3917B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BLEBackgroundDemo/Pods-BLEBackgroundDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLEBackgroundDemo/Pods-BLEBackgroundDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8B33687CECE4B85FA121717 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BLEBackgroundDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2969A73326B3B2D4D8CFE77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BLEBackgroundDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D591B9952087AFC200B468C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D591B99F2087AFC200B468C1 /* ViewController.swift in Sources */,
+				D51EB68D2087C07400689DDB /* ViewController.swift in Sources */,
+				D51EB6902087C09D00689DDB /* DeviceManager.swift in Sources */,
+				D51EB6862087B50B00689DDB /* PushNotificationHandler.swift in Sources */,
 				D591B99D2087AFC200B468C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,9 +592,13 @@
 		};
 		D591B9C22087AFC500B468C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ABC620A7FCBBE151A5F1E52 /* Pods-BLEBackgroundDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BLEBackgroundDemo/BLEBackgroundDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGE53N9MG6;
 				INFOPLIST_FILE = BLEBackgroundDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,6 +606,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,9 +614,13 @@
 		};
 		D591B9C32087AFC500B468C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D398E0D712FDC43C7A688B /* Pods-BLEBackgroundDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BLEBackgroundDemo/BLEBackgroundDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGE53N9MG6;
 				INFOPLIST_FILE = BLEBackgroundDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +628,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +636,7 @@
 		};
 		D591B9C52087AFC500B468C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB67A357774ACF924869DF07 /* Pods-BLEBackgroundDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +657,7 @@
 		};
 		D591B9C62087AFC500B468C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F3B9B63F3134096BB4ED4F /* Pods-BLEBackgroundDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +678,7 @@
 		};
 		D591B9C82087AFC500B468C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFEE9E96FBDC3E3DE0B4761D /* Pods-BLEBackgroundDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +698,7 @@
 		};
 		D591B9C92087AFC500B468C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8989C431952A4B6D5E1FF21 /* Pods-BLEBackgroundDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
