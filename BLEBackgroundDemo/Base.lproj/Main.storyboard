@@ -13,12 +13,12 @@
         <!--View Controller-->
         <scene sceneID="xtm-Up-5ca">
             <objects>
-                <viewController id="wxh-YX-gpV" customClass="ViewController" customModule="BleExampleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wxh-YX-gpV" customClass="ViewController" customModule="BLEBackgroundDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uw7-2W-QBO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name Ble Device" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4tg-mY-fDA">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="BLE Device Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4tg-mY-fDA">
                                 <rect key="frame" x="62" y="100" width="144" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="Hog-9x-TZ5"/>

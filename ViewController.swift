@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreBluetooth
+import FirebaseMessaging
+import FirebaseInstanceID
+import Alamofire
 
 class ViewController: UIViewController {
     @IBOutlet weak var textFieldDeviceName: UITextField!
@@ -28,12 +31,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+//        Messaging.messaging().subscribe(toTopic: "car_parked")
+//        Messaging.messaging().subscribe(toTopic: "car_unparked")
+        
         deviceManager.delegate = self
         viewDeviceFound.isHidden = true
         
         AppDelegate.sharedApplication().showLocalNotification(withMessage: "Hello Ganesh")
         
         NotificationCenter.default.addObserver(self, selector: #selector(startScan), name: NSNotification.Name(rawValue: "start_scaniing"), object: nil)
+        
+        textFieldDeviceName.text = "Clove_1_TWSD01A"
 
     }
 
@@ -65,7 +74,8 @@ class ViewController: UIViewController {
 //        }
         
         //deviceManager.startScan([CBUUID(string: "180A")])
-        deviceManager.startScan([CBUUID(string: "180A")])
+        //deviceManager.startScan([CBUUID(string: "FEE7")])
+        deviceManager.startScan([CBUUID(string: "FEF5")])
         
         acticityIndicator.isHidden = false
     }
@@ -146,7 +156,8 @@ extension ViewController: DeviceManagerDelegate {
             //btnConnect.titleLabel?.text = "Di"
           //  btnConnect.isEnabled = false
             
-            AppDelegate.sharedApplication().showLocalNotification(withMessage: "\(String(describing: peripheral.name)) connected!!!")
+         //   AppDelegate.sharedApplication().showLocalNotification(withMessage: "\(String(describing: peripheral.name)) connected!!!")
+            sendPushMessage("Your car is Moving-UnParked !!!", "Your BLE device is connected")
             
             AppDelegate.sharedApplication().endBackgroundTask()
 
@@ -160,8 +171,10 @@ extension ViewController: DeviceManagerDelegate {
         func disconnected(_ peripheral: CBPeripheral,
                           with error: Error?) {
             
-            AppDelegate.sharedApplication().showLocalNotification(withMessage: "\(String(describing: peripheral.name)) disconnected!!!")
+           // AppDelegate.sharedApplication().showLocalNotification(withMessage: "\(String(describing: peripheral.name)) disconnected!!!")
             print("\(String(describing: peripheral.name)) disconnected!!!")
+            
+            sendPushMessage("Your car is Parked !!!", "Your BLE device is diconnected")
             
             labelConnectionStatus.text = "Not Connected"
            // btnConnect.isEnabled = true
@@ -170,12 +183,28 @@ extension ViewController: DeviceManagerDelegate {
         }
     
     
-    
-    
-    
-    
-    
-    
+    func sendPushMessage(_ title: String, _ body: String) {
+        // Alamofire 3
+        let not_parameters: Parameters = [
+            "body":body,
+            "title":title
+        ]
+        let parameters: Parameters = [
+            "to": "/topics/car_parked",
+            "notification":not_parameters
+        ]
+        
+        let url = "https://fcm.googleapis.com/fcm/send"
+
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "Authorization":"key=AIzaSyANVvCv8oV-Y5AfaYKETOoWBCz4eXDQkNA"
+        ]
+        
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).response { (response) in
+            print("Response is = \(response.response)")
+        }
+    }
 }
 
 

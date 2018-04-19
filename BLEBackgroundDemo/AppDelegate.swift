@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseMessaging
 import UserNotifications
 
 let DEVICE_TOKEN = "device_token"
@@ -53,8 +54,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
-        
+        Messaging.messaging().shouldEstablishDirectChannel = true
         registerForRemoteNotification(application)
+        
+        
         return true
     }
     
@@ -83,6 +86,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         // Note: This callback is fired at each app startup and whenever a new token is generated.
         
         UserDefaults.standard.setValue(fcmToken, forKey: DEVICE_TOKEN)
+        
+        Messaging.messaging().subscribe(toTopic: "car_parked")
+        Messaging.messaging().subscribe(toTopic: "car_unparked")
+        Messaging.messaging().subscribe(toTopic: "car_parked_ble")
+        Messaging.messaging().subscribe(toTopic: "car_unparked_ble")
     }
 
 
@@ -139,7 +147,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         }
     }
     
-    
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        print("Message received = \(remoteMessage.appData)")
+    }
     
 }
 

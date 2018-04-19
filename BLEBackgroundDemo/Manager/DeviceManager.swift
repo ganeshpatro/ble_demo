@@ -99,7 +99,6 @@ extension DeviceManager: CBCentralManagerDelegate {
     func centralManager(_ central: CBCentralManager,
                         didDisconnectPeripheral peripheral: CBPeripheral,
                         error: Error?) {
-        
         delegate?.disconnected(peripheral, with: error)
     }
     

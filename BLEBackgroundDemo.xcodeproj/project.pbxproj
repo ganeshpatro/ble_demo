@@ -12,9 +12,9 @@
 		D51EB6832087B43E00689DDB /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51EB6812087B43E00689DDB /* UserNotificationsUI.framework */; };
 		D51EB6842087B43E00689DDB /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51EB6822087B43E00689DDB /* UserNotifications.framework */; };
 		D51EB6862087B50B00689DDB /* PushNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EB6852087B50B00689DDB /* PushNotificationHandler.swift */; };
-		D51EB6882087B5C500689DDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D51EB6872087B5C500689DDB /* GoogleService-Info.plist */; };
 		D51EB68D2087C07400689DDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EB68C2087C07300689DDB /* ViewController.swift */; };
 		D51EB6902087C09D00689DDB /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51EB68F2087C09D00689DDB /* DeviceManager.swift */; };
+		D54438F92088FE66007EA97C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54438F82088FE65007EA97C /* GoogleService-Info.plist */; };
 		D591B99D2087AFC200B468C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D591B99C2087AFC200B468C1 /* AppDelegate.swift */; };
 		D591B9A22087AFC200B468C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D591B9A02087AFC200B468C1 /* Main.storyboard */; };
 		D591B9A42087AFC400B468C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D591B9A32087AFC400B468C1 /* Assets.xcassets */; };
@@ -51,10 +51,10 @@
 		D51EB6812087B43E00689DDB /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		D51EB6822087B43E00689DDB /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		D51EB6852087B50B00689DDB /* PushNotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationHandler.swift; sourceTree = "<group>"; };
-		D51EB6872087B5C500689DDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D51EB68B2087BC7A00689DDB /* BLEBackgroundDemo.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = BLEBackgroundDemo.entitlements; sourceTree = "<group>"; };
 		D51EB68C2087C07300689DDB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		D51EB68F2087C09D00689DDB /* DeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		D54438F82088FE65007EA97C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D591B9992087AFC200B468C1 /* BLEBackgroundDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEBackgroundDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D591B99C2087AFC200B468C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D591B9A12087AFC200B468C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,10 +160,10 @@
 		D591B99B2087AFC200B468C1 /* BLEBackgroundDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D54438F82088FE65007EA97C /* GoogleService-Info.plist */,
 				D51EB68E2087C09D00689DDB /* Manager */,
 				D51EB68C2087C07300689DDB /* ViewController.swift */,
 				D51EB68B2087BC7A00689DDB /* BLEBackgroundDemo.entitlements */,
-				D51EB6872087B5C500689DDB /* GoogleService-Info.plist */,
 				D591B99C2087AFC200B468C1 /* AppDelegate.swift */,
 				D591B9A02087AFC200B468C1 /* Main.storyboard */,
 				D591B9A32087AFC400B468C1 /* Assets.xcassets */,
@@ -312,9 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D591B9A72087AFC400B468C1 /* LaunchScreen.storyboard in Resources */,
-				D51EB6882087B5C500689DDB /* GoogleService-Info.plist in Resources */,
 				D591B9A42087AFC400B468C1 /* Assets.xcassets in Resources */,
 				D591B9A22087AFC200B468C1 /* Main.storyboard in Resources */,
+				D54438F92088FE66007EA97C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,12 +360,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BLEBackgroundDemo/Pods-BLEBackgroundDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -598,16 +600,13 @@
 				CODE_SIGN_ENTITLEMENTS = BLEBackgroundDemo/BLEBackgroundDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = MMMJR6XCK4;
+				DEVELOPMENT_TEAM = 85REB6BACQ;
 				INFOPLIST_FILE = BLEBackgroundDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arris.-";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBGDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5a03a470-dc32-4ea5-b40f-4188a54d6a88";
-				PROVISIONING_PROFILE_SPECIFIER = SURFboardManager_Development_Profile;
+				PROVISIONING_PROFILE = "d45f29da-aa8b-4619-aaf7-17e6abb69fdf";
+				PROVISIONING_PROFILE_SPECIFIER = blebg_development;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -621,16 +620,13 @@
 				CODE_SIGN_ENTITLEMENTS = BLEBackgroundDemo/BLEBackgroundDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = MMMJR6XCK4;
+				DEVELOPMENT_TEAM = 85REB6BACQ;
 				INFOPLIST_FILE = BLEBackgroundDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arris.-";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBGDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5a03a470-dc32-4ea5-b40f-4188a54d6a88";
-				PROVISIONING_PROFILE_SPECIFIER = SURFboardManager_Development_Profile;
+				PROVISIONING_PROFILE = "d45f29da-aa8b-4619-aaf7-17e6abb69fdf";
+				PROVISIONING_PROFILE_SPECIFIER = blebg_development;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -644,11 +640,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BLEBackgroundDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -665,11 +657,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BLEBackgroundDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -685,11 +673,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BLEBackgroundDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -705,11 +689,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BLEBackgroundDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.globaledgesoft.BLEBackgroundDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
